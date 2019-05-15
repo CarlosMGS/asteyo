@@ -1,0 +1,257 @@
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*																														*/
+/*									Meme: página donde se visualiza un meme y toda su info								*/
+/*																														*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.contenido-meme {
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 25px;
+	padding-left: 25px;
+	padding-right: 60px;
+
+	width: 100%;
+	height: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/* contenedor del meme */
+.contenido-meme #container-meme {
+	max-width: 500px;
+	max-height: 700px; 
+
+	border-radius: 2px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* meme */
+.contenido-meme #img-meme {
+	width: 100%;
+	height: auto;
+}
+
+/*div con la medalla y el meme en el ranking*/
+.ranking{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.span-ranking{
+	font-size: 20px;
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/* div que contiene el avatar del usuario y otro div con el título y le autor del meme*/
+.contenido-meme #info {
+	display: flex;
+	flex-direction: row;
+
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/*imagen de perfil del usuario */
+.contenido-meme #info #user-profile-picture {
+	width: 75px;
+	height: 75px;
+}
+
+/* div con el titulo y el autor del meme */
+.contenido-meme #info #meme-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	padding-left: 10px;
+}
+
+/* estilo para el enlace que redirige al perfil del autor del meme */
+a {
+	text-decoration: none;
+	color: coral;
+}
+
+/* estilo del enlace al pasar por encima */
+a:hover {
+	text-decoration: underline;
+}
+
+/* estilo del enlace al clickar sobre el */
+a:active {
+	text-decoration: none;
+	color: #22264b;
+}
+
+/* estilo del titulo del meme */
+.contenido-meme #info #meme-info #title {
+	font-weight: bold;
+	padding: 4px 0px;
+}
+
+/* div con los metadatos del meme */
+.contenido-meme #meme-data {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 10px;
+	margin-bottom: 25px;
+	padding: 5px 0px;
+
+	color: grey;
+	border-top: 1px solid grey;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/* estilo del titulo de la sección de comentarios*/
+.contenido-meme h3 {
+	margin-top: 2%;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.contenido-meme #mensaje{
+	margin-top: 20px;
+}
+
+.contenido-meme #commentForm{
+	margin-top: 20px;
+	display: flex; 
+	flex-direction: row;
+	width: 650px; 
+	align-items: center;
+}
+
+.contenido-meme #commentForm textarea{
+	min-width: 650px;
+	min-height: 50px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1em;
+	margin-right: 10px;
+
+}
+
+/* seccion de comentarios */
+.contenido-meme #comment-section {
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 10px;
+	margin-bottom: 25px;
+
+	border-top: 2px solid coral;
+}
+
+/*Caja que engloba todo el comentario*/
+.contenido-meme #comment-section .cajaComentario{
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 15px;
+
+	width: 650px; 
+
+	background-color: #e8edf3;
+	border-bottom: 2px solid coral;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Nombre de usuario*/
+.contenido-meme #comment-section .cajaComentario #user{
+	border-bottom: 2px solid rgb(214, 73, 22);
+	background-color: coral;
+	font-style: italic;
+	font-size: 1.3em;
+	padding: 0.5%;
+	color: white;
+}
+
+/*Fecha comentario*/
+.contenido-meme #comment-section .cajaComentario #fecha{
+	color: grey;
+	font-size: 0.9em;
+	padding: 1%;
+}
+
+
+/*Comentario*/
+.contenido-meme #comment-section .cajaComentario #comentario{
+	padding: 2.5%;
+}
+
+#commentForm button{
+	margin-top: 8px;
+	padding: 8px 14px;
+	
+	text-decoration: none;
+	color: white;
+	background-color: coral;
+	border-radius: 6px;
+	border: 0px;
+}
+
+#commentForm button:hover{
+	text-decoration: none;
+    color: white;
+    background-color: #22264b;
+    border-radius: 6px;
+    border: 0px;
+}
+
+.contenido-meme #comment-section .cajaComentario .botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 2%;
+	padding: 1.5%;
+}
+
+.cajaComentario .botones a{
+	text-decoration: none;
+	margin: 5px;
+	cursor: pointer;
+}
+
+
+/*Submenú del botón reportar*/
+#reportMeme{
+	cursor: pointer;
+	text-decoration: none;
+	width: 15%;
+}
+
+.botones ul{
+	margin-left: 6.5%;
+	list-style: none;
+	position:absolute;
+}
+.botones ul li{
+	padding: 6px;
+	background-color: #e8edf3;
+	border: 1px solid coral;
+}
+
+.botones #menuReportMeme{
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/* estilo para el botón de like */
+.like{
+	border: none;
+	background-color: white;
+	cursor: pointer;
+	font-size: 16px;
+}

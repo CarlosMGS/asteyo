@@ -1,0 +1,249 @@
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+/*
+	- para centrar cosas dentro de los div: usad los atributos "justify-content: center;" y "align-items: center;"
+*/
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+@font-face {
+  font-family: asteyoFont;
+  src: url(https://fonts.googleapis.com/css?family=Ubuntu);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: asteyoFont, sans-serif;
+}
+
+body {
+	background-color: white;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*																														*/
+/*								Contenedor: div que contiene toda la página de Asteyo									*/
+/*																														*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/* contenedor : div principal donde está contenido todo aquello que se visualiza por pantalla*/
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	/* le damos una altura mínima de 100vh (= 100% del viewport height) para que abarque toda la pantalla y
+	pudea crecer sin problemas */
+	min-height: 100vh;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*																														*/
+/*										Cabecera: div de la cabecera de la página										*/
+/*																														*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.cabecera {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	background-color: black;
+	color: #e8edf3;
+
+}
+
+/*div imagen*/
+.cabecera #logo {
+	display: flex;
+	align-items: flex-start;
+	width: 50%;
+}
+
+
+/* logo */
+.cabecera img{
+	height: 50px;
+}
+
+/*links de la cabecera */
+.cabecera #link{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+	padding-right: 30px;
+}
+
+.cabecera #link a{
+	margin: 0 3px;
+	padding: 1% 2%;
+	text-decoration: none;
+	color: #e8edf3;
+}
+
+.cabecera #link a:hover{	
+	background-color: #e8edf3;
+	color: #22264b;
+	border-radius: 5px;
+}
+
+.nav li{
+	list-style: none;
+	float:left;
+}
+
+.nav li ul{
+
+	display: none;
+	position:absolute;
+	width: 140px;
+}
+
+.nav li:hover ul{
+	display: block;
+	/*margin-top: 5px;*/
+	background-color: black;
+}
+
+.nav li ul li a{
+  display: block;
+  padding:5%;
+  text-decoration: none;
+}
+
+.nav li ul li a:hover{
+	background-color: black;
+	color:white;
+}
+ 
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*																														*/
+/*								Principal: div con el contenido principal de la página									*/
+/*																														*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/*principal: contenedor principal sobre el cual tenemos nuestro sidebar y el contenido de la página */
+.principal{
+	display: flex;
+	flex-direction: row;
+	min-height: 600px;
+}
+
+/* div contenido*/
+.principal #contenido {
+	display: flex;
+	flex-direction: column;
+	padding: 2% 2%;
+	width: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*																														*/
+/*								Sidebar Izq: div con el sidebar izquierdo de la página									*/
+/*																														*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.sidebarIzq{
+	display: flex;
+	flex-direction: column;
+
+	padding: 2% 1.5%;
+
+	width: 250px;
+	min-height: 600px;
+
+	background-color: #e8edf3;
+}
+
+/* estilo de los hashtag */
+.sidebarIzq a {
+	color: #22264b;
+}
+
+/* estilo de los hashtag al ser pulsados */
+.sidebarIzq a:active {
+	color: coral;
+}
+
+/* estilo del nombre de la columna */
+.sidebarIzq th {
+	padding: 10px;
+
+	border-bottom: 2px solid coral;
+}
+
+/* estilo de las celdas de las filas */
+.sidebarIzq td #info-hashtag{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	font-size: 14px;
+}
+
+/* estilo para las etiquetas que muestran la cantidad de likes de un hashtag */
+.sidebarIzq td #info-hashtag #num_likes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 50px;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+
+	color: #e8edf3;
+	background-color: #22264b;
+	border-radius: 6px;
+}
+
+/* estilo para el span del corazón*/
+.sidebarIzq td #info-hashtag #num_likes span{
+	position: relative;
+	bottom: 1px;
+}
+
+/* estilo para el número de likes*/
+.sidebarIzq td #info-hashtag #num_likes p{
+	font-style: italic;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*																														*/
+/*												Pie: div del pie de la página											*/
+/*																														*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.pie{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+	background-color: #22264b;
+	font-weight: bold;
+	color: white;
+}

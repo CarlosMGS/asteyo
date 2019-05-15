@@ -1,0 +1,135 @@
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*																														*/
+/*										Perfil: página de perfil de los usuarios										*/
+/*																														*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/*editar perfil*/
+
+.principal #contenido #perfil .botones{
+	margin-left: 10px;
+	
+}
+
+.principal #contenido #perfil .botones ul{
+	list-style: none;
+	margin-top: 10px;
+}
+
+.principal #contenido #perfil .botones ul li a{
+	width: 100%;
+}
+
+.principal #contenido a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1% 1%;
+	width: 100px;
+	color: black;
+	border: 1.5px solid black;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold; 
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+/* estilo del hover de editar perfil */
+.principal #contenido a:hover {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/* panel del perfil con al foto y los datos del usuario*/
+.principal #contenido #panel-perfil {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	border-top: 2px solid coral;
+}
+
+/*imagen de perfil*/
+.principal #contenido #panel-perfil #foto #img-perfil {
+	width: 120px;
+	height: 120px;
+}
+
+/*info del usuario*/
+.principal #contenido #panel-perfil #perfil {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 300px;
+	padding: 2% 2%;
+}
+
+/*estilo de los div que van a contener la información del usuario dentro del perfil*/
+.principal #contenido #panel-perfil #perfil #user-info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.principal #contenido #panel-perfil #perfil p {
+	margin: 5px 10px;
+	font-weight: bold;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+/*panel de memes del perfil*/
+.memes-perfil {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	margin-top:5px;
+	padding-top: 5px;
+	border-top: 2px solid coral;
+}
+
+/*panel del perfil donde estan contenidos cada uno de los memes de usuario */
+.principal #contenido #meme {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 24%;
+
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+
+	background-color: #eaeaea;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*imagen del meme*/
+.principal #contenido #imagen-meme {
+	width: auto;
+	height: 150px;
+}
+
+/* div con la meta información del meme */
+.principal #contenido #meme-taInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+
+	background-color: white;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
