@@ -81,10 +81,12 @@ require_once("includes/FormularioSubirMeme.php");
 							<input type="text" id="txtTextoAbajo" onkeyup="GenerarMeme()" value="Abajo" class="form-control" />
 							Imagen: 
 							<input type="file" name="fileMeme" id="fileMeme" class="form-control">
-							Titulo:
+							<!--
+							Titulo (sólo si se sube):
 							<input type="text" id="titulo" value="Titulo" class="form-control" />
-							Hashtags:
+							Hashtags (sólo si se sube):
 							<input type="text" id="hashtags" value="hashtags" class="form-control" />
+							-->
 						</div>
                 </div>
                 
@@ -123,13 +125,13 @@ require_once("includes/FormularioSubirMeme.php");
 			<div class="panel panel-default">
 			<div class="panel-heading">Salida del Meme</div>
                 <div class="panel-body">
-                <img src="meme5.jpg" id="image" style="display:none; width: 100%; height: auto" />
+                <img src="./assets/templates/meme5.jpg" id="image" style="display:none; width: 100%; height: auto" />
                     <canvas id="canvas" style="width: 100%; height: auto"></canvas>
                 
                 </div>
                     </div>
                     <a id="btnDescargar" value="Descargar" class="btn btn-danger">Descargar meme </a>
-					<a id="btnSubir" value="Subir" class="btn btn-danger">Subir meme</a>
+					<!--<a id="btnSubir" value="Subir" class="btn btn-danger">Subir meme</a>-->
                 </div>
 
 				

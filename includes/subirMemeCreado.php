@@ -1,13 +1,12 @@
 <?php
 
-require_once('Form.php');
 require_once('usuario.php');
 require_once('Meme.php');
 require_once('Hashtag.php');
-require_once('usuario.php');
 
 
-class formularioSubirMeme extends Form{
+
+class formularioSubirMemeCreado extends Form{
 
     public function  __construct($formId, $opciones = array() ){
         parent::__construct($formId, $opciones);

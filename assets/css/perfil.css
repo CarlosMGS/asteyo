@@ -11,6 +11,7 @@
 	
 }
 
+
 .principal #contenido #perfil .botones ul{
 	list-style: none;
 	margin-top: 10px;
@@ -108,7 +109,7 @@
 	margin-right: 5px;
 
 	background-color: #eaeaea;
-	border-radius: 8px;
+	border-radius: 4px;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -130,6 +131,4 @@
 	padding-bottom: 4px;
 
 	background-color: white;
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
 }
